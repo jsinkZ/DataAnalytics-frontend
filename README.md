@@ -20,3 +20,7 @@ npm i
 ```sh
 npm start // Запуск
 ```
+
+## Задеплоен на vercel
+
+[https://dataanalytics-frontend.vercel.app/](https://dataanalytics-frontend.vercel.app/)
