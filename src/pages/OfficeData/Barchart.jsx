@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
+import BarChartSkeleton from './BarChartSkeleton'
 import { Bar } from 'react-chartjs-2'
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
 
 const BarChart = ({ data, classes }) => {
+	const [currentCategory, setCurrentCategory] = useState(0)
+	const isLoading = data.length === 0
 	const labels = data.map((item) => item.name)
 	const categories = ['Среднее', 'Медианное', 'Минимальное', 'Максимальное']
 	const categoriesToData = ['avg', 'median', 'min', 'max']
-	const [currentCategory, setCurrentCategory] = useState(0)
 
 	const options = {
 		plugins: {
@@ -44,17 +46,31 @@ const BarChart = ({ data, classes }) => {
 
 	return (
 		<>
-			<ul className={classes.categories}>
-				{categories.map((category, index) => (
-					<li key={index}>
-						<span className={classes.chooseCategory} onClick={() => setCurrentCategory(index)}>
-							{category}
-						</span>{' '}
-						{index === categories.length - 1 ? ' ' : '/'}
-					</li>
-				))}
-			</ul>
-			<Bar options={options} data={dataForBar} width={10} height={4} />
+			{isLoading ? (
+				<>
+					<p> Loading... </p>
+					<BarChartSkeleton />
+				</>
+			) : (
+				<>
+					<ul className={classes.categories}>
+						{categories.map((category, index) => (
+							<li key={index}>
+								<span
+									className={`${classes.chooseCategory} ${
+										currentCategory === index ? classes.activeCategory : ''
+									}`}
+									onClick={() => setCurrentCategory(index)}
+								>
+									{category}
+								</span>{' '}
+								{index === categories.length - 1 ? ' ' : '/'}
+							</li>
+						))}
+					</ul>
+					<Bar options={options} data={dataForBar} width={10} height={4} />
+				</>
+			)}
 		</>
 	)
 }

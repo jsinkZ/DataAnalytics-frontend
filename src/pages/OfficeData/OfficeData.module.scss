@@ -23,6 +23,7 @@ main {
             margin-bottom: 25px;
             font-size: 1.2em;
             font-family: Consolas, monaco, monospace;
+            user-select: none;
 
             li {    
                 list-style: none;
@@ -36,6 +37,12 @@ main {
                     &:hover {
                         color: $purpleHover;
                     }
+                }
+
+                .activeCategory {
+                    color: $purpleHover;
+                    font-weight: bold;
+                    cursor:auto;
                 }
             }
         }
