@@ -16,6 +16,8 @@ const BarChart = ({ data, classes }) => {
 				position: 'top',
 			},
 		},
+		responsive: true,
+		aspectRatio: 2,
 	}
 
 	const colors = {
@@ -64,11 +66,12 @@ const BarChart = ({ data, classes }) => {
 								>
 									{category}
 								</span>{' '}
-								{index === categories.length - 1 ? ' ' : '/'}
+								{index === categories.length - 1 ? ' ' : <span className={classes.categoriesSlash}> / </span>}
 							</li>
 						))}
 					</ul>
 					<Bar options={options} data={dataForBar} width={10} height={4} />
+					<h2 className={classes.rotatePhone}>Для лучшего использования переверните телефон </h2>
 				</>
 			)}
 		</>

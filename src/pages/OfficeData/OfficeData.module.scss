@@ -1,27 +1,30 @@
 @import './../../styles/index.scss';
 
 main {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
     h2 {
         margin-top: 20px;
         margin-bottom: 0;
+        font-size: 2em;
         text-align: center;
     }
 
     .barWindow {
-        width: 60%;
+        width: 50%;
         margin: 60px auto;
         margin-top: 0;
         text-align: center;
+        box-sizing: border-box;
 
         .categories {
             display: flex;
             justify-content: center;
             margin-top: 10px;
             margin-bottom: 25px;
-            font-size: 1.2em;
+            padding: 0;
+            font-size: 1.3em;
             font-family: Consolas, monaco, monospace;
             user-select: none;
 
@@ -31,6 +34,7 @@ main {
 
                 .chooseCategory {
                     color: $purple;
+                    font-size: 1em;
                     transition: all $defaultHoverTransition ease;
                     cursor: pointer;
     
@@ -46,5 +50,37 @@ main {
                 }
             }
         }
+
+        .rotatePhone {
+            color: $purple;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .barWindow {
+        width: 100% !important; 
+    }
+
+    .chooseCategory {
+        font-size: 0.8em !important; 
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .categoriesSlash {
+        display: none;
+    } 
+
+}
+
+@media screen and (max-width: 500px) { 
+    .chooseCategory {
+        font-size: 0.7em !important;
+    }
+
+    .rotatePhone {
+        display: inline !important;
     }
 }
