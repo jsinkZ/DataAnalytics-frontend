@@ -1,0 +1,30 @@
+@import './../styles/index.scss';
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: $purple;
+    box-sizing: border-box;
+    user-select: none;
+
+    h2 {
+        color: white;
+        margin-left: 80px;
+
+        sub {
+            margin-left: 10px;
+            font-size: 0.6em;
+            font-family: Consolas, monaco, monospace;
+
+            a {
+                color: $lightPurple;
+                transition: all $defaultHoverTransition ease;
+                text-decoration: none;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
