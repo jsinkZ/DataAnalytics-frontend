@@ -1,5 +1,7 @@
+@import './styles/index.scss';
+
 ::selection {
-  background-color: #7BC1A4;
+  background-color: $purple;
   color: white;
 }
 
