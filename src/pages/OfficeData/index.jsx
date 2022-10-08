@@ -21,7 +21,7 @@ const OfficeData = () => {
 				по данным НСИ
 			</h2>
 			<div className={classes.barWindow}>
-				<BarChart data={data} />
+				<BarChart data={data} classes={classes} />
 			</div>
 		</main>
 	)

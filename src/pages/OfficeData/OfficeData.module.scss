@@ -1,14 +1,43 @@
+@import './../../styles/index.scss';
+
 main {
     width: 90%;
     margin: 0 auto;
 
     h2 {
         margin-top: 20px;
+        margin-bottom: 0;
         text-align: center;
     }
 
     .barWindow {
         width: 60%;
         margin: 60px auto;
+        margin-top: 0;
+        text-align: center;
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            font-size: 1.2em;
+            font-family: Consolas, monaco, monospace;
+
+            li {    
+                list-style: none;
+                margin: 0 3px;
+
+                .chooseCategory {
+                    color: $purple;
+                    transition: all $defaultHoverTransition ease;
+                    cursor: pointer;
+    
+                    &:hover {
+                        color: $purpleHover;
+                    }
+                }
+            }
+        }
     }
 }
