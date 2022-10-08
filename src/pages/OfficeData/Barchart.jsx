@@ -23,7 +23,7 @@ const BarChart = ({ data, classes }) => {
 		green: '#7BC1A4',
 	}
 
-	const datas = {
+	const dataForBar = {
 		labels,
 		datasets: [
 			{
@@ -54,7 +54,7 @@ const BarChart = ({ data, classes }) => {
 					</li>
 				))}
 			</ul>
-			<Bar options={options} data={datas} width={10} height={4} />
+			<Bar options={options} data={dataForBar} width={10} height={4} />
 		</>
 	)
 }
