@@ -12,7 +12,7 @@
 
 ```sh
 cd DataAnalytics-frontend
-npm i
+npm i --legacy-peer-deps
 ```
 
 ## Команды
