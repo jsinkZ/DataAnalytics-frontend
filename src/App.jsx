@@ -17,3 +17,5 @@ const App = () => {
 }
 
 export default App
+
+//  "web-vitals": "^2.1.4"
