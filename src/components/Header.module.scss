@@ -1,4 +1,4 @@
-@import './../styles/index.scss';
+@import './../assets/styles/index.scss';
 
 header {
     width: 100%;
@@ -14,7 +14,7 @@ header {
         sub {
             margin-left: 10px;
             font-size: 0.6em;
-            font-family: Consolas, monaco, monospace;
+            font-family: "Consolas", monaco, monospace;
 
             a {
                 color: $lightPurple;
