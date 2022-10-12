@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import BarChartSkeleton from './BarchartSkeleton'
+import BarChartSkeleton from './BarchartSkeleton.jsx'
 import { Bar } from 'react-chartjs-2'
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
 
