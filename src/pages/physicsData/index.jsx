@@ -46,19 +46,18 @@ const PhysicsData = () => {
 					</li>
 				))}
 			</ul>
-
+			<Table
+				data={data.dispersions}
+				isLoading={isLoading}
+				currentCategory={currentCategory}
+				classes={classes}
+			/>
 			<h2>
 				Витрина
 				<code> barchart </code>
 				по данным газов
 			</h2>
 			<div className={classes.barWindow}>
-				<Table
-					data={data.dispersions}
-					isLoading={isLoading}
-					currentCategory={currentCategory}
-					classes={classes}
-				/>
 				<BarChart
 					colors={colors}
 					data={data}
