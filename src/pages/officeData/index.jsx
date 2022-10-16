@@ -7,6 +7,7 @@ import BarChart from './Barchart'
 
 const OfficeData = () => {
 	const [data, setData] = useState([])
+
 	useEffect(() => {
 		axios.get(`${serverAddress}/companiesReady`).then((res) => {
 			setData(res.data)

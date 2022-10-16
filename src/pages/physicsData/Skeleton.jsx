@@ -18,8 +18,7 @@ const Skeleton = () => {
 				backgroundColor='#f3f3f3'
 				foregroundColor='#ecebeb'
 			>
-				<rect x='1' y='12' rx='0' ry='0' width='60%' height='26' />
-				<rect x='1' y='55' rx='0' ry='0' width='60%' height='537' />
+				<rect x='1' y='55' rx='0' ry='0' width='60%' height='450' />
 			</ContentLoader>
 		</div>
 	)
