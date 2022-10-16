@@ -50,8 +50,8 @@ const Linechart = ({ colors, data, labels, currentCategory, isLoading, classes }
 			{
 				label: 'Абсолютное отклонение',
 				data: massesDiff.map((item) => item[0]),
-				borderColor: colors.green,
-				backgroundColor: colors.backgroundGreen,
+				borderColor: colors.pink,
+				backgroundColor: colors.backgroundPink,
 				yAxisID: 'y',
 			},
 			{
