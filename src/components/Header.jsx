@@ -16,7 +16,7 @@ const Header = () => {
 					</a>
 				</sub>
 				<p>
-					<NavLink to='/office'>Office</NavLink> <NavLink to='/physics'>Physics</NavLink>
+					<NavLink to='/office'>Office</NavLink> / <NavLink to='/physics'>Physics</NavLink>
 				</p>
 			</h2>
 		</header>
