@@ -3,7 +3,7 @@ import { Bar } from 'react-chartjs-2'
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
 
 const BarChart = ({ data, title, classes }) => {
-	const labels = ['Зумерки', 'Миллениалы']
+	const labels = ['Зумеры', 'Миллениалы']
 	const colors = {
 		red: '#C17B7B',
 		backgroundRed: '#C18E8E',

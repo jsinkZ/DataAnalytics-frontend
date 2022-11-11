@@ -3,7 +3,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
 
 const Doughnutchart = ({ data, title }) => {
-	const labels = ['Зумерки', 'Миллениалы']
+	const labels = ['Зумеры', 'Миллениалы']
 	const colors = {
 		red: '#C17B7B',
 		backgroundRed: '#C18E8E',
