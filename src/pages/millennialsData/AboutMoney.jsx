@@ -15,19 +15,19 @@ const AboutMoney = () => {
 		<>
 			<div className={classes.dashboard}>
 				<div className={classes.barWindow}>
-					<BarChart data={livingCost} title='Стоимость жизни, %' classes={classes} />
+					<BarChart data={livingCost} title='Стоимость жизни (сколько денег нужно), %' classes={classes} />
 				</div>
 				<div className={classes.dogWindow}>
-					<Doughnutchart data={badSalary} title='Маленькая (плохая) зарплата, %' />
+					<Doughnutchart data={badSalary} title='Маленькая (плохая) зарплата по их меркам, %' />
 				</div>
 				<div className={classes.barWindow}>
-					<BarChart data={notEnoughMoney} title='Не хватает денег на нужны, %' classes={classes} />
+					<BarChart data={notEnoughMoney} title='Не хватает денег на нужды, %' classes={classes} />
 				</div>
 				<div className={classes.barWindow}>
-					<BarChart data={goodSalary} title='Хороший заработок, %' classes={classes} />
+					<BarChart data={goodSalary} title='Довольны собственным заработком, %' classes={classes} />
 				</div>
 				<div className={classes.barWindow}>
-					<BarChart data={addEarnings} title='Дополнительные заработок, %' classes={classes} />
+					<BarChart data={addEarnings} title='Имеют дополнительный заработок, %' classes={classes} />
 				</div>
 			</div>
 		</>
