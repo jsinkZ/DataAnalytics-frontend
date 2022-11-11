@@ -16,7 +16,8 @@ const Header = () => {
 					</a>
 				</sub>
 				<p>
-					<NavLink to='/office'>Office</NavLink> / <NavLink to='/physics'>Physics</NavLink>
+					<NavLink to='/office'>Office</NavLink>/<NavLink to='/physics'>Physics</NavLink>/
+					<NavLink to='/millennials'>Gen Z vs Millennials</NavLink>
 				</p>
 			</h2>
 		</header>

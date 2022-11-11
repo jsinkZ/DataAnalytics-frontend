@@ -57,7 +57,7 @@ const PhysicsData = () => {
 			<h2>
 				Витрина
 				<code> barchart </code>
-				по данным газов
+				по данным газов (датчики)
 			</h2>
 			<div className={classes.barWindow}>
 				<BarChart
@@ -74,7 +74,7 @@ const PhysicsData = () => {
 			<h2>
 				Витрина
 				<code> linechart </code>
-				по данным газов
+				по данным газов (датчики)
 			</h2>
 			<div className={classes.barWindow}>
 				<Linechart

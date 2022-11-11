@@ -17,7 +17,7 @@ const OfficeData = () => {
 	return (
 		<main>
 			<h2>
-				Витрина
+				Витрина доходов
 				<code> Barchart </code>
 				по данным НСИ
 			</h2>
