@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+
 import AboutHealth from './AboutHealth'
 import AboutMoney from './AboutMoney'
 import AboutWork from './AboutWork'
+import Categories from './../../components/Categories'
 
 import classes from './MillennialData.module.scss'
 
@@ -27,26 +29,16 @@ const MillennialsData = () => {
 	}
 
 	return (
-		<main>
+		<>
 			<h2>ЧЕМ ЖИВУТ ЗУММЕРЫ И МИЛЛЕНИАЛЫ ?</h2>
-			<ul className={classes.categories}>
-				{categories.map((category, index) => (
-					<li key={index}>
-						<span
-							className={`${classes.chooseCategory} ${
-								currentCategory === index ? classes.activeCategory : ''
-							}`}
-							onClick={() => setCurrentCategory(index)}
-						>
-							{category}
-						</span>{' '}
-						{index === categories.length - 1 ? ' ' : <span className={classes.categoriesSlash}> / </span>}
-					</li>
-				))}
-			</ul>
+			<Categories
+				classes={classes}
+				categories={categories}
+				currentCategory={currentCategory}
+				setCurrentCategory={setCurrentCategory}
+			/>
 			{renderPageCategory()}
-			<h2 className={classes.rotatePhone}>Для лучшего использования переверните телефон </h2>
-		</main>
+		</>
 	)
 }
 

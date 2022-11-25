@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Skeleton from './Skeleton'
 
 const Table = ({ data, currentCategory, isLoading, classes }) => {

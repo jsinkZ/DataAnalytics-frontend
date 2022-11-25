@@ -11,7 +11,7 @@ const AboutWork = () => {
 	const wannaLeave = [35, 32]
 	const cantQuit = [26, 31]
 	const fenSec = [30, 29]
-	const dontWantWorkInOffice = [75, 76]
+	const dontWantToWorkInOffice = [75, 76]
 
 	return (
 		<>
@@ -30,13 +30,13 @@ const AboutWork = () => {
 				</div>
 				<div className={classes.dogWindow}>
 					<Doughnutchart data={fenSec} title='Не чувствуют в финансовой безопасности, %' />
-				</div>	
+				</div>
 				<div className={classes.barWindow}>
 					<BarChart data={cantQuit} title='Не могут уволиться по иным обстоятельствам, %' classes={classes} />
 				</div>
 				<div className={classes.barWindow}>
 					<BarChart
-						data={dontWantWorkInOffice}
+						data={dontWantToWorkInOffice}
 						title='Не хотят работать полный день в офисе, %'
 						classes={classes}
 					/>

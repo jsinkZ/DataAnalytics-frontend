@@ -12,10 +12,11 @@ import {
 } from 'chart.js'
 
 import Skeleton from './Skeleton'
+import colors from './../../assets/js/colors'
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend)
 
-const Linechart = ({ colors, data, labels, currentCategory, isLoading, classes }) => {
+const Linechart = ({ data, labels, currentCategory, isLoading }) => {
 	const massesDiff = Object.entries(!isLoading ? data?.gases?.[currentCategory] : {}).map(
 		(item) => item[1][3]
 	)

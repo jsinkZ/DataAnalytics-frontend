@@ -1,88 +1,83 @@
 @import './../../assets/styles/index.scss';
 
-main {
-    width: 100%;
-    margin: 0 auto;
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto;
+    padding: 0;
+    font-size: 1.3em;
+    font-family: "Consolas", monaco, monospace;
+    user-select: none;
 
-    .categories {
-        display: flex;
-        justify-content: center;
-        margin: 35px auto;
-        padding: 0;
-        font-size: 1.3em;
-        font-family: "Consolas", monaco, monospace;
-        user-select: none;
+    li {    
+        list-style: none;
+        margin: 0 3px;
 
-        li {    
-            list-style: none;
-            margin: 0 3px;
+        .chooseCategory {
+            color: $purple;
+            font-size: 1em;
+            transition: all $defaultHoverTransition ease;
+            cursor: pointer;
 
-            .chooseCategory {
-                color: $purple;
-                font-size: 1em;
-                transition: all $defaultHoverTransition ease;
-                cursor: pointer;
-
-                &:hover {
-                    color: $purpleHover;
-                }
-            }
-
-            .activeCategory {
+            &:hover {
                 color: $purpleHover;
-                font-weight: bold;
-                cursor: auto;
             }
         }
-    }
 
-    table, th, td { 
-        border-collapse: collapse;
-        border: 1px solid #E5E5E5;
-    }
-
-    table {   
-        width: 68%;
-        border-radius: 35px;
-        margin: 0 auto;
-        padding-bottom: 30px;
-        text-align: center;
-        box-sizing: border-box;
-        margin: 20px auto;
-
-        td {
-            width: 20%;
-            height: 55px;
-            user-select: none;
-        }
-
-        .tdValue {
-            font-family: "Consolas", monaco, monospace;
-            user-select: all;
+        .activeCategory {
+            color: $purpleHover;
+            font-weight: bold;
+            cursor: auto;
         }
     }
+}
 
-    h2 {
-        margin-top: 20px;
-        margin-bottom: 0;
-        font-size: 2em;
-        text-align: center;
+table, th, td { 
+    border-collapse: collapse;
+    border: 1px solid #E5E5E5;
+}
+
+table {   
+    width: 68%;
+    border-radius: 35px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 20px auto;
+
+    td {
+        width: 20%;
+        height: 55px;
+        user-select: none;
     }
 
-    .barWindow {
-        width: 68%;
-        border-radius: 35px;
-        margin: 0 auto;
-        padding-bottom: 30px;
-        text-align: center;
-        box-sizing: border-box;
+    .tdValue {
+        font-family: "Consolas", monaco, monospace;
+        user-select: all;
     }
+}
 
-    .rotatePhone {
-        color: $purple;
-        display: none;
-        margin: 0 auto;
-    }
+h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.barWindow {
+    width: 68%;
+    border-radius: 35px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.rotatePhone {
+    color: $purple;
+    display: none;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) { 
@@ -113,10 +108,6 @@ main {
 @media screen and (max-width: 500px) { 
     .chooseCategory {
         font-size: 0.7em !important;
-    }
-
-    .rotatePhone {
-        display: inline !important;
     }
 
     table { 

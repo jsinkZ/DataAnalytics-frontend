@@ -3,8 +3,9 @@ import { Bar } from 'react-chartjs-2'
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
 
 import Skeleton from './Skeleton'
+import colors from './../../assets/js/colors'
 
-const BarChart = ({ colors, data, labels, isLoading, currentCategory, classes }) => {
+const BarChart = ({ data, labels, isLoading, currentCategory }) => {
 	const masses = Object.entries(!isLoading ? data?.gases?.[currentCategory] : {}).map((item) => item[1][2])
 
 	const options = {
