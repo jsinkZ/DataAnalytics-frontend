@@ -1,4 +1,4 @@
-@import './../assets/styles/index.scss';
+@import './../../assets/styles/index.scss';
 
 header {
     width: 100%;
@@ -17,7 +17,7 @@ header {
             font-family: "Consolas", monaco, monospace;
         }
     }
-
+    
     a {
         color: $lightPurple;
         transition: all $defaultHoverTransition ease;
